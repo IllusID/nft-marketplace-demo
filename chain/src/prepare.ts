@@ -57,7 +57,7 @@ async function main() {
     await nft.connect(account1).mintTo(address1)
   }
 
-  console.log("4. == list 1-6 to market")
+  console.log("4. == list 7-9 to market")
   for(let i=7;i<=9;i++){
     await nft.connect(account1).approve(marketAddress,i)
     await market.connect(account1).createMarketItem(tokenAddress, i, auctionPrice, { value: listingFee })
